@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+<title>HealthMate Dashboard</title>
+<link rel="stylesheet" href="style.css">
+
+</head>
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<body onload="loadDashboard()">
+
+<div class="dashboard-layout">
+<button onclick="toggleDarkMode()" class="dark-toggle">🌙</button>
+<!-- SIDEBAR -->
+
+<div class="sidebar">
+
+<h2>HealthMate</h2>
+
+<a href="dashboard.html"> Dashboard</a>
+<a href="profile.html"> Profile</a>
+<a href="chatbot.html"> AI Chatbot</a>
+<a href="symptom.html"> Symptom Checker</a>
+<a href="bmi.html">BMI Calculator</a>
+<a href="diet.html"> Diet Plan</a>
+<a href="exercise.html"> Exercise Guide</a>
+<a href="report.html">📄 Health Report</a>
+
+<a href="login.html" class="logout">🚪 Logout</a>
+
+</div>
+
+
+<!-- MAIN CONTENT -->
+
+<div class="dashboard-main">
+
+<h1>Welcome to Your Health Dashboard</h1>
+<div class="stats-grid">
+
+<div class="stat-card">
+<h3>BMI Status</h3>
+<p id="bmiStat">Normal</p>
+</div>
+
+<div class="stat-card">
+<h3>Daily Calories</h3>
+<p>2100 kcal</p>
+</div>
+
+<div class="stat-card">
+<h3>Exercise Time</h3>
+<p>45 min</p>
+</div>
+
+<div class="stat-card">
+<h3>Health Score</h3>
+<p>85%</p>
+</div>
+
+</div>
+<div class="profile-dashboard">
+<div class="chart-box">
+
+<h2>Health Activity Overview</h2>
+
+<canvas id="healthChart" width="400" height="200"></canvas>
+
+</div>
+<img src="https://cdn-icons-png.flaticon.com/512/149/149071.png" class="avatar">
+
+<h2 id="dname"></h2>
+
+<p><b>Email:</b> <span id="demail"></span></p>
+
+<p><b>Phone:</b> <span id="dphone"></span></p>
+
+<p><b>Profession:</b> <span id="dprofession"></span></p>
+
+</div>
+
+</div>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+
+</html>

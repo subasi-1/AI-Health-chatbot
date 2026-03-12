@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+<title>User Profile</title>
+<link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+<header>
+<button onclick="toggleDarkMode()" class="dark-toggle">🌙</button>
+<h1>User Health Profile</h1>
+
+<nav>
+<a href="index.html">Home</a>
+<a href="profile.html">Profile</a>
+<a href="dashboard.html">Dashboard</a>
+<a href="chatbot.html">AI Chatbot</a>
+<a href="symptom.html">Symptom Checker</a>
+<a href="bmi.html">BMI Calculator</a>
+<a href="diet.html">Diet Plan</a>
+<a href="exercise.html">Exercise Guide</a>
+</nav>
+</header>
+
+<div class="profile-container">
+
+<h2>Enter Your Details</h2>
+
+<label>Name</label><br>
+<input type="text" id="name"><br><br>
+
+<label>Age</label><br>
+<input type="number" id="age"><br><br>
+
+<label>Gender</label><br>
+<select id="gender">
+<option>Male</option>
+<option>Female</option>
+<option>Other</option>
+</select>
+
+<br><br>
+
+<button onclick="saveProfile()">Save Profile</button>
+
+<h3 id="profileMsg"></h3>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+
+</html>

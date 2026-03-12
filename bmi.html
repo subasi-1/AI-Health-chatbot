@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+<title>BMI Calculator</title>
+<link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+<header>
+<button onclick="toggleDarkMode()" class="dark-toggle">🌙</button>
+<h1>BMI Calculator</h1>
+
+<nav>
+<a href="index.html">Home</a>
+<a href="profile.html">Profile</a>
+<a href="dashboard.html">Dashboard</a>
+<a href="chatbot.html">AI Chatbot</a>
+<a href="symptom.html">Symptom Checker</a>
+<a href="bmi.html">BMI Calculator</a>
+<a href="diet.html">Diet Plan</a>
+<a href="exercise.html">Exercise Guide</a>
+</nav>
+
+</header>
+
+<div class="bmi-container">
+
+<h2>Check Your BMI</h2>
+
+<label>Enter Weight (kg)</label><br>
+<input type="number" id="weight"><br><br>
+
+<label>Enter Height (cm)</label><br>
+<input type="number" id="height"><br><br>
+
+<button onclick="calculateBMI()">Calculate BMI</button>
+
+<h3 id="bmiResult"></h3>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+
+</html>

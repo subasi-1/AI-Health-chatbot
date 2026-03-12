@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+<title>Health Report</title>
+<link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+<header>
+<button onclick="toggleDarkMode()" class="dark-toggle">🌙</button>
+<h1>Health Report Generator</h1>
+
+</header>
+
+<div class="report-container">
+
+<h2>Generate Health Report</h2>
+
+<label>Enter Symptoms</label>
+
+<input type="text" id="symptoms" placeholder="Example: fever, headache">
+
+<br><br>
+
+<button onclick="generateReport()">Generate Report</button>
+
+<button onclick="downloadPDF()">Download PDF</button>
+
+<div id="reportResult"></div>
+
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+
+<script src="script.js"></script>
+
+</body>
+
+</html>

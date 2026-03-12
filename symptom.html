@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+<title>Symptom Checker</title>
+<link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+<header>
+<button onclick="toggleDarkMode()" class="dark-toggle">🌙</button>
+<h1>Symptom Checker</h1>
+<nav>
+<a href="index.html">Home</a>
+<a href="profile.html">Profile</a>
+<a href="dashboard.html">Dashboard</a>
+<a href="chatbot.html">AI Chatbot</a>
+<a href="symptom.html">Symptom Checker</a>
+<a href="bmi.html">BMI Calculator</a>
+<a href="diet.html">Diet Plan</a>
+<a href="exercise.html">Exercise Guide</a>
+</nav>
+</header>
+
+
+<div class="symptom-container">
+
+<h2>Select Your Symptoms</h2>
+
+<label><input type="checkbox" value="fever"> Fever</label><br>
+<label><input type="checkbox" value="cough"> Cough</label><br>
+<label><input type="checkbox" value="headache"> Headache</label><br>
+<label><input type="checkbox" value="stomach"> Stomach Pain</label><br>
+<label><input type="checkbox" value="fatigue"> Fatigue</label><br>
+<label><input type="checkbox" value="chest"> Chest Pain</label><br>
+
+<br><br>
+
+<button onclick="checkSymptoms()">Analyze Symptoms</button>
+
+<h3 id="result"></h3>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+
+</html>

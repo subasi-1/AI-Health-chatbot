@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+<title>Exercise Guide</title>
+<link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+<header>
+<button onclick="toggleDarkMode()" class="dark-toggle">🌙</button>
+<h1>Exercise Guide</h1>
+
+<nav>
+<a href="index.html">Home</a>
+<a href="profile.html">Profile</a>
+<a href="dashboard.html">Dashboard</a>
+<a href="chatbot.html">AI Chatbot</a>
+<a href="symptom.html">Symptom Checker</a>
+<a href="bmi.html">BMI Calculator</a>
+<a href="diet.html">Diet Plan</a>
+<a href="exercise.html">Exercise Guide</a>
+</nav>
+</header>
+
+<div class="exercise-container">
+
+<h2>Select Your Goal</h2>
+
+<select id="exerciseGoal">
+
+<option value="">Choose Goal</option>
+<option value="weightloss">Weight Loss</option>
+<option value="fitness">General Fitness</option>
+<option value="strength">Strength Training</option>
+
+</select>
+
+<br><br>
+
+<button onclick="generateExercise()">Get Workout Plan</button>
+
+<h3 id="exerciseResult"></h3>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+
+</html>
